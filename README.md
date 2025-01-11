@@ -1,38 +1,43 @@
-# sv
+# 🌌 Galactia Portfolio
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Sebuah website portofolio personal bertema **Galactia**, dirancang untuk menghadirkan pengalaman interaktif dan visual yang memukau. Dibangun menggunakan **SvelteKit**, **GSAP**, dan **TypeScript**.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🚀 Fitur Utama
+1. **Space Center Lobby**  
+   Halaman utama (space center lobby) memuat isi kantong dari cosmonaut yang berupa polaroid potret si cosmonaut.
 
-```bash
-# create a new project in the current directory
-npx sv create
+2. **Cosmonaut Pages**  
+   Halaman (cosmonaut suite) yang berisi informasi tentang latar belakang, pengalaman, dan skill cosmonaut sejauh ini.
 
-# create a new project in my-app
-npx sv create my-app
-```
+3. **Portonaout Crates**  
+   Tempat untuk menampilkan koleksi proyek Anda dengan desain futuristik dan navigasi menarik.
 
-## Developing
+4. **Portostation Contact Center**  
+   Halaman untuk memudahkan recruiter berinteraksi dan menghubungi cosmonaut.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+---
 
-```bash
-npm run dev
+## 🛠️ Teknologi yang Digunakan
+- **[SvelteKit](https://kit.svelte.dev/)**: Framework modern untuk membangun aplikasi web dengan performa tinggi.  
+- **[GSAP](https://greensock.com/gsap/)**: Library animasi yang memungkinkan pembuatan efek transisi yang halus dan memikat.  
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset JavaScript yang mendukung pengembangan dengan tipe data yang lebih terstruktur.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+---
 
-## Building
+## 📸 Cuplikan Proyek
+<!-- - **Lobby**  
+  ![Preview Lobby](link-preview-lobby)
+  
+- **Biography**  
+  ![Preview Biography](link-preview-biography)
 
-To create a production version of your app:
+- **Portonaout Crates**  
+  ![Preview Portonaout Crates](link-preview-portonaout-crates)
 
-```bash
-npm run build
-```
+- **Contact Center**  
+  ![Preview Contact Center](link-preview-contact-center) -->
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
