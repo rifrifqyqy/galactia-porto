@@ -1,0 +1,82 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Silkscreen&family=Caveat&display=swap');
+
+body {
+	@apply overflow-hidden bg-zinc-900;
+}
+.poly-clip {
+	clip-path: polygon(
+		12.9% 23.9%,
+		11.7% 23%,
+		23.6% 0%,
+		59% 0%,
+		72.6% 1.3%,
+		88.7% 33.7%,
+		89.9% 33%,
+		99.4% 49.6%,
+		94.5% 58.4%,
+		93% 57.3%,
+		72.6% 98.4%,
+		32.8% 98.6%,
+		23.3% 99.7%,
+		10.2% 74.7%,
+		11.8% 73.6%,
+		0% 49.9%,
+		12.9% 23.9%
+	);
+	overflow: hidden;
+}
+.poly-style {
+	@apply w-[70px] backdrop-blur-sm transition-all;
+}
+.poly-clip[aria-current='page'] {
+	@apply bg-amber-500/80;
+}
+
+.font-anton {
+	font-family: 'Anton', serif;
+}
+
+.font-silkscreen {
+	font-family: 'Silkscreen', serif;
+}
+.font-caveat {
+	font-family: 'Caveat', serif;
+}
+.scrollbar-hide {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
+
+.custom-scrollbar {
+	/* Scrollbar hanya akan muncul jika kontennya panjang */
+	max-height: 300px;
+	overflow-y: scroll; /* Aktifkan scrollbar vertikal */
+}
+
+/* Scrollbar container */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 8px; /* Lebar scrollbar */
+	height: 8px; /* Tinggi scrollbar horizontal */
+}
+
+/* Track (background scrollbar) */
+.custom-scrollbar::-webkit-scrollbar-track {
+	@apply rounded-full bg-zinc-200/20;
+}
+
+/* Thumb (bagian yang bisa digeser) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, #ffd437, #8854ff);
+	border-radius: 8px;
+}
+
+/* Thumb saat hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
