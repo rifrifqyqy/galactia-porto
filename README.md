@@ -20,7 +20,8 @@ Sebuah website portofolio personal bertema **Galactia**, dirancang untuk menghad
 ---
 
 ## 🛠️ Teknologi yang Digunakan
-![Ruby](https://img.shields.io/badge/svelte-dc2f02.svg?style=for-the-badge&logo=svelte&logoColor=white)
+![Ruby](https://img.shields.io/badge/sveltekit-dc2f02.svg?style=for-the-badge&logo=svelte&logoColor=white)
+![Ruby](https://img.shields.io/badge/typescript-0077b6.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![GSAP](https://img.shields.io/badge/gsap-38b000.svg?style=for-the-badge&logo=greensock&logoColor=white)
 
 ---
