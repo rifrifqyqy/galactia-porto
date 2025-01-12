@@ -123,6 +123,11 @@ export const databaseSkills = [
 		id: 2,
 		title: 'mysql',
 		thumbnail: '/images/sketch/sql.svg'
+	},
+	{
+		id: 3,
+		title: 'Prisma',
+		thumbnail: '/images/sketch/prisma.svg'
 	}
 ];
 
