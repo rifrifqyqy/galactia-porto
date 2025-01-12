@@ -117,6 +117,8 @@
 <a
 	{href}
 	aria-label="btn"
+	data-sveltekit-preload-data="tap"
+	data-sveltekit-preload-code="true"
 	on:click={(e) => handleClick(e, href)}
 	class="text-dark-100 hover:text-primary-100 rounded-full px-4 py-2 transition-all"><slot /></a
 >
