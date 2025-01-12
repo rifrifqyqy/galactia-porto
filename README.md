@@ -20,9 +20,9 @@ Sebuah website portofolio personal bertema **Galactia**, dirancang untuk menghad
 ---
 
 ## 🛠️ Teknologi yang Digunakan
-- **[SvelteKit](https://kit.svelte.dev/)**: Framework modern untuk membangun aplikasi web dengan performa tinggi.  
-- **[GSAP](https://greensock.com/gsap/)**: Library animasi yang memungkinkan pembuatan efek transisi yang halus dan memikat.  
-- **[TypeScript](https://www.typescriptlang.org/)**: Superset JavaScript yang mendukung pengembangan dengan tipe data yang lebih terstruktur.
+![Ruby](https://img.shields.io/badge/sveltekit-dc2f02.svg?style=for-the-badge&logo=svelte&logoColor=white)
+![Ruby](https://img.shields.io/badge/typescript-0077b6.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![GSAP](https://img.shields.io/badge/gsap-38b000.svg?style=for-the-badge&logo=greensock&logoColor=white)
 
 ---
 
