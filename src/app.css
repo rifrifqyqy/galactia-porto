@@ -75,8 +75,3 @@ body {
 	background: linear-gradient(45deg, #ffd437, #8854ff);
 	border-radius: 8px;
 }
-
-/* Thumb saat hover */
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-	background: #555;
-}
