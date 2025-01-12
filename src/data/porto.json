@@ -1,0 +1,248 @@
+[
+	{
+		"id": 1,
+		"title": "SMAKO LANDING PAGE",
+		"date": "22 Februari 2024",
+		"imageUrl": "/images/porto/instasmako.jpg",
+		"description": "SMAKO is an application owned by a single company or wholesale groceries store. This application serves customers who wish to purchase groceries in large quantities. The SMAKO app is an ideal solution for grocery store owners looking to expand their business and for customers seeking a steady supply of groceries in bulk.",
+		"label": "Website",
+		"figmaUrl": "https://www.figma.com/design/Da59P9eG9T1Ihc5IdVpFuj/Semako?node-id=1-3&t=HFvFeBggksRZCx2y-1",
+		"webUrl": "https://rifrifqyqy.github.io/Smako-wholesale/",
+
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/css.svg", "name": "CSS" },
+			{ "id": 2, "toolthumb": "/images/sketch/js.svg", "name": "JS" },
+			{ "id": 3, "toolthumb": "/images/sketch/figma.svg", "name": "Figma" }
+		]
+	},
+	{
+		"id": 2,
+		"title": "SUBWAY web revamp",
+		"date": "09 June 2024",
+		"imageUrl": "/images/porto/instasubway.jpg",
+		"description": "Subway adalah resto food and beverages yang menyediakan makanan seperti sandwich, burger dan olahan roti dan beef daging.",
+		"label": "Website",
+		"webUrl": "https://nuxtsubway.vercel.app",
+
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/nuxt.svg", "name": "Nuxt" },
+			{ "id": 2, "toolthumb": "/images/sketch/nuxtui.svg", "name": "Nuxt UI" },
+			{ "id": 3, "toolthumb": "/images/sketch/vue.svg", "name": "Vue" },
+			{ "id": 4, "toolthumb": "/images/sketch/tailwind.svg", "name": "Tailwind CSS" },
+			{ "id": 5, "toolthumb": "/images/sketch/css.svg", "name": "CSS" }
+		]
+	},
+
+	{
+		"id": 3,
+		"title": "tbn indonesia web revamp",
+		"date": "20 Mei 2024",
+		"imageUrl": "/images/porto/instatbn.jpg",
+		"description": "TBNIndonesia merupakan perusahaan yang mengadakan event workshop berkaitan dengan bisnis.",
+		"label": "Website",
+		"webUrl": "https://tbn-indonesia.vercel.app/",
+
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/figma.svg", "name": "Figma" },
+			{ "id": 2, "toolthumb": "/images/sketch/react.svg", "name": "React" },
+			{ "id": 3, "toolthumb": "/images/sketch/vitejs.svg", "name": "Vite" },
+			{ "id": 4, "toolthumb": "/images/sketch/tailwind.svg", "name": "Tailwind" },
+			{ "id": 5, "toolthumb": "/images/sketch/framermotion.svg", "name": "Framer Motion" }
+		]
+	},
+	{
+		"id": 4,
+		"title": "Homespot web revamp",
+		"date": "22 Januari 2024",
+		"imageUrl": "/images/porto/homespot.png",
+		"description": "Revamp website penyedia jasa pencarian properti Homespot. Tugas Hackaton #1 di Maxy Academy",
+		"label": "Website",
+		"webUrl": "https://rifrifqyqy.github.io/Maxy-Homespot/",
+
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/css.svg", "name": "CSS" },
+			{ "id": 2, "toolthumb": "/images/sketch/bootstrap.svg", "name": "Bootstrap" },
+			{ "id": 3, "toolthumb": "/images/sketch/jquery.svg", "name": "JQuery" }
+		]
+	},
+	{
+		"id": 5,
+		"title": "BHARACODE WEB (GDSC)",
+		"date": "22 Januari 2024",
+		"imageUrl": "/images/porto/portoBharacode.png",
+		"description": "Bharacode web, website mengenai ekstrakulikuler kampus dengan ranah IT nya seperti frontend, UIUX, Backend",
+		"label": "Website",
+		"webUrl": "https://rifrifqyqy.github.io/Tugas-Akhir-RifqyHamdani/",
+
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/css.svg", "name": "CSS" },
+			{ "id": 2, "toolthumb": "/images/sketch/js.svg", "name": "Javascript" },
+			{ "id": 3, "toolthumb": "/images/sketch/jquery.svg", "name": "JQuery" },
+			{ "id": 4, "toolthumb": "/images/sketch/figma.svg", "name": "Figma" }
+		]
+	},
+	{
+		"id": 6,
+		"title": "RecyThing UI/UX | MSIB 5 Capstone",
+		"date": "20 Desember 2023",
+		"imageUrl": "/images/porto/recything.jpg",
+		"description": "Aplikasi Inovatif untuk membantu & mengatasi permasalahan seputar sampah daur ulang dan pelaporan tumpukan serta pelanggaran pembuangan sampah. Meningkatkan Kesadaran Masyarakat, Meminimalisir Pembuangan Sampah Sembarangan, Meningkatkan Partisipasi Masyarakat. Metode yang digunakan yaitu Design Thinking.masalah banyak sampah timbunan dan samapah yang tidak terkelola. Recything dikerjakan dengan 9 uiux, 10 frontend, 5 backend, 4 mobile dan 2 QA engineer",
+		"label": "Figma",
+		"figmaUrl": "https://www.figma.com/design/MNMdvvfmCZVFc6HRsjrcCy/Recything-Design?node-id=8576-50678&t=8R0AalSkWIkuJ1La-1",
+		"webUrl": "https://recything.my.id/",
+
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/figma.svg", "name": "Figma" },
+			{ "id": 2, "toolthumb": "/images/sketch/useberry.svg", "name": "Useberry" }
+		]
+	},
+	{
+		"id": 7,
+		"title": "Toupu tempat topup games",
+		"date": "26 Desember 2023",
+		"imageUrl": "/images/porto/toupu2.jpg",
+		"description": "Aplikasi tempat topup games favoritmu TOUPU!. desain dibuat dengan memerhatikan kenyamanan pengguna dan referensi berdasarkan berbagai layanan topup yang sudah ada, seperti meppostore dan lapak gaming",
+		"label": "Figma",
+		"figmaUrl": "https://www.figma.com/design/7irgz6RqIeJ5sSIgx7uFZ3/toUpu---Concept?node-id=0-1&t=L9dD4pbwy3jSS6k6-1",
+		"tools": [{ "id": 1, "toolthumb": "/images/sketch/figma.svg", "name": "Figma" }]
+	},
+	{
+		"id": 8,
+		"title": "Genshin web toolkit",
+		"date": "20 Agustus 2023",
+		"imageUrl": "/images/porto/webjoki2.png",
+		"description": "Website tempat memantau statistik akun genshin mu! dengan dashboard untuk melihat guide materials, guide spiral dan event ongoing dalam genhin impact",
+		"label": "Figma",
+		"figmaUrl": "https://www.figma.com/design/8waLgtvt4EglR1vtUuGef4/WebJoki-Genshin-(Unfinished)-(Community)?node-id=0-1&t=WfGq9hY4m2ombSrV-1",
+
+		"tools": [{ "id": 1, "toolthumb": "/images/sketch/figma.svg", "name": "Figma" }]
+	},
+	{
+		"id": 9,
+		"title": "SMAKO LOGO",
+		"date": "30 Oktober 2020",
+		"imageUrl": "/images/porto/smakologo1.png",
+		"description": "SMAKO is a wholesale store owned by a single company or a wholesale grocery store. This establishment serves customers who wish to purchase groceries in large quantities. Logo SMAKO terlihat seperti dua orang yang sedang berjabat tangan dalam perspektif bird eye angle. Ini menunjukkan proses transaksi antara penjual dan pembeli selalu terjadi di tempat “SMAKO” ini. Bentuk persegi memberikan kesan stabil dan kokoh. Ini mengirimkan pesan kepada pemirsa bahwa perusahaan atau merek tersebut kuat dan dapat diandalkan dalam menjalankan bisnisnya.",
+		"label": "Design",
+		"figmaUrl": "",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/illustrator.svg", "name": "Illustrator" },
+			{ "id": 2, "toolthumb": "/images/sketch/photoshop.svg", "name": "Photoshop" }
+		]
+	},
+	{
+		"id": 10,
+		"title": "PES Kit Design",
+		"date": "16 Agustus 2020",
+		"imageUrl": "/images/porto/peskit1.jpg",
+		"description": "Desain kit pes untuk kustomisasi. klub zenit st petersburg",
+		"label": "Design",
+		"figmaUrl": "",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/illustrator.svg", "name": "Illustrator" },
+			{ "id": 2, "toolthumb": "/images/sketch/photoshop.svg", "name": "Photoshop" }
+		]
+	},
+	{
+		"id": 11,
+		"title": "Li-Play Internet Cafe Membership Card Design",
+		"date": "16 Januari 2021",
+		"imageUrl": "/images/porto/liplay.png",
+		"description": "Desain Membership Card Li-Play. Internet kafe (warnet)",
+		"label": "Design",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/illustrator.svg", "name": "Illustrator" },
+			{ "id": 2, "toolthumb": "/images/sketch/photoshop.svg", "name": "Photoshop" }
+		]
+	},
+	{
+		"id": 12,
+		"title": "Majelis Flyer MT DAARUL KHOIR",
+		"date": "16 Januari 2019",
+		"imageUrl": "/images/porto/majlisflyer.png",
+		"description": "Flyer design untuk majelis mt daarul khoir teman saya",
+		"label": "Design",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/illustrator.svg", "name": "Illustrator" },
+			{ "id": 2, "toolthumb": "/images/sketch/photoshop.svg", "name": "Photoshop" }
+		]
+	},
+	{
+		"id": 13,
+		"title": "TouTour Travel Website",
+		"date": "17 Juli 2024",
+		"imageUrl": "/images/porto/toutour1.jpg",
+		"description": "Website TouTour adalah sebuah platform yang dirancang untuk memudahkan pengguna dalam mendaftar dan memesan tiket wisata secara online. Website ini dibuat sebagai bagian dari proyek capstone untuk memenuhi syarat kelulusan dalam program Sertifikasi Junior Web Development yang diselenggarakan oleh Digitalent VSGA. TouTour menawarkan berbagai fitur yang memudahkan pengguna menjelajahi destinasi wisata, memilih paket wisata, serta melakukan pembayaran dengan aman dan praktis. Proyek ini merupakan hasil implementasi keterampilan dalam pengembangan web menggunakan teknologi modern dan desain responsif.",
+		"label": "Website",
+		"webUrl": "https://toutourism.vercel.app/",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/vue.svg", "name": "Vue" },
+			{ "id": 2, "toolthumb": "/images/sketch/nuxt.svg", "name": "Nuxt" },
+			{ "id": 3, "toolthumb": "/images/sketch/tailwind.svg", "name": "Tailwind" },
+			{ "id": 4, "toolthumb": "/images/sketch/swiperjs.svg", "name": "SwiperJS" },
+			{ "id": 5, "toolthumb": "/images/sketch/nuxtui.svg", "name": "Nuxt UI" },
+			{ "id": 6, "toolthumb": "/images/sketch/php.svg", "name": "PHP" },
+			{ "id": 7, "toolthumb": "/images/sketch/bootstrap.svg", "name": "Bootstrap" }
+		]
+	},
+	{
+		"id": 14,
+		"title": "INTERNSHIP | Biznisup Courses Page",
+		"date": "20 Mei 2024",
+		"imageUrl": "/images/porto/biznisupporto.png",
+		"description": "Selama 3 bulan internship di Dconsulting sebagai Frontend Developer, saya berkontribusi dalam pengembangan BiznisUp, sebuah platform ecourse yang berfokus pada konsultasi bisnis. Dalam proyek ini, saya bertanggung jawab untuk mengimplementasikan antarmuka pengguna yang responsif dan ramah pengguna, memastikan pengalaman belajar yang optimal bagi pengguna platform. Melalui kolaborasi dengan tim, saya berhasil menyelesaikan berbagai fitur, termasuk integrasi halaman kursus, sistem navigasi, dan optimalisasi performa website.",
+		"label": "Website",
+		"webUrl": null,
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/php.svg", "name": "Php" },
+			{ "id": 2, "toolthumb": "/images/sketch/codeignater.svg", "name": "Codeigniter 4" },
+			{ "id": 3, "toolthumb": "/images/sketch/bootstrap.svg", "name": "Bootstrap" }
+		]
+	},
+	{
+		"id": 15,
+		"title": "Mako Bakery Redesign",
+		"date": "16 November 2024",
+		"imageUrl": "/images/porto/makoporto.jpg",
+		"description": "Proyek ini melibatkan pengembangan landing page yang menarik untuk memperkenalkan brand, halaman produk yang menampilkan katalog roti secara interaktif, serta penambahan fitur login pengguna yang memungkinkan pelanggan memberikan rating dan ulasan terhadap produk. Selain itu, saya juga mengembangkan dashboard manajemen roti untuk admin, yang mempermudah pengelolaan data produk seperti stok, harga, dan informasi lainnya.",
+		"label": "Website",
+		"webUrl": "https://makobakery.vercel.app",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/remixjs.png", "name": "Remix JS" },
+			{ "id": 2, "toolthumb": "/images/sketch/prisma.svg", "name": "Prisma" },
+			{ "id": 3, "toolthumb": "/images/sketch/mongodb.svg", "name": "Mongo DB" },
+			{ "id": 4, "toolthumb": "/images/sketch/tailwind.svg", "name": "Tailwind CSS" },
+			{ "id": 5, "toolthumb": "/images/sketch/framermotion.svg", "name": "Framer Motion" },
+			{ "id": 6, "toolthumb": "/images/sketch/swiperjs.svg", "name": "SwiperJS" }
+		]
+	},
+	{
+		"id": 16,
+		"title": "Lilearn Course Web",
+		"date": "24 September 2024",
+		"imageUrl": "/images/porto/lilearnporto.png",
+		"description": "Sebuah website fullstack yang dirancang untuk membantu pengguna belajar berbagai topik seperti teknologi coding dan desain. Platform ini menyediakan pengalaman pembelajaran yang interaktif dan terstruktur. Salah satu fitur unggulan yang saya kembangkan adalah dashboard manajemen course, yang memungkinkan pengelolaan kursus secara efisien, mulai dari menambahkan hingga memonitor data peserta.",
+		"label": "Website",
+		"webUrl": null,
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/rails.svg", "name": "Ruby on Rails" },
+			{ "id": 2, "toolthumb": "/images/sketch/ruby.svg", "name": "Ruby" },
+			{ "id": 3, "toolthumb": "/images/sketch/mongodb.svg", "name": "Mongo DB" },
+			{ "id": 4, "toolthumb": "/images/sketch/tailwind.svg", "name": "Tailwind CSS" }
+		]
+	},
+	{
+		"id": 17,
+		"title": "GDSC | Fudo website restaurant",
+		"date": "20 Desember 2024",
+		"imageUrl": "/images/porto/fudoporto.png",
+		"description": "Website ini menyediakan informasi lengkap seperti deskripsi, harga, dan gambar dari setiap hidangan, sehingga pengguna dapat dengan mudah memilih menu sesuai keinginan. Proyek ini merupakan bagian dari tugas UKM Google Developer Student Clubs (GDSC) di Universitas Bhayangkara Jakarta Raya.",
+		"label": "Website",
+		"webUrl": "https://rifqy-frontendgdsc.vercel.app/",
+		"tools": [
+			{ "id": 1, "toolthumb": "/images/sketch/svelte.svg", "name": "Sveltekit" },
+			{ "id": 2, "toolthumb": "/images/sketch/gsap2.svg", "name": "GSAP" },
+			{ "id": 3, "toolthumb": "/images/sketch/tailwind.svg", "name": "Tailwind CSS" }
+		]
+	}
+]
