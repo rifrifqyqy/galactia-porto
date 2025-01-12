@@ -144,7 +144,7 @@
 				<img
 					bind:this={mouseoverEl}
 					src="/images/galaxgif.gif"
-					class=" mouseover absolute left-0 top-0 aspect-auto w-72 rounded-full object-contain mix-blend-lighten"
+					class=" mouseover absolute left-0 top-0 aspect-auto w-72 rounded-full object-contain mix-blend-lighten grayscale"
 					alt=""
 				/>
 			</div>
