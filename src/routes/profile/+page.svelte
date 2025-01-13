@@ -3,31 +3,24 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { experienceData } from '../../data/Experience';
-	import {
-		backEndSkills,
-		databaseSkills,
-		designSkills,
-		frontEndSkills,
-		otherSkills
-	} from '../../data/Skills';
 	let container: HTMLElement;
 	let expcon: HTMLElement;
 	let skillcon: HTMLElement;
-
-	let tabs = ['Design', 'Frontend', 'Backend', 'Database', 'Tools'];
+	export let data;
+	let tabs = data.tabsProfileData;
 
 	let activeSkill = 'Design';
 	$: activeData =
 		activeSkill === 'Design'
-			? designSkills
+			? data.designData
 			: activeSkill === 'Frontend'
-				? frontEndSkills
+				? data.frontendData
 				: activeSkill === 'Backend'
-					? backEndSkills
+					? data.backendData
 					: activeSkill === 'Database'
-						? databaseSkills
+						? data.databaseData
 						: activeSkill === 'Tools'
-							? otherSkills
+							? data.otherData
 							: [];
 
 	onMount(() => {
@@ -89,6 +82,11 @@
 		targetDiv.addEventListener('mousemove', handleMouseMove);
 	});
 </script>
+
+<svelte:head>
+	<title>Rifqy | Portonaut Profile</title>
+	<meta name="description" content="Porteroid - Rifqy Hamdani" />
+</svelte:head>
 
 <main class="relative grid h-screen grid-cols-2 items-center justify-center gap-8 text-white">
 	<section class="font-silkscreen flex flex-col items-center gap-4">
