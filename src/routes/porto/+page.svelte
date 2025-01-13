@@ -11,7 +11,11 @@
 	function setActivePorto(porto: any) {
 		activeportoItem = porto;
 	}
-	onMount(() => {});
+
+	let readmore = false;
+	function handleReadMore() {
+		readmore = !readmore;
+	}
 </script>
 
 <svelte:head>
@@ -79,11 +83,18 @@
 		<article class="space-y-3">
 			<h1 class="">#Porteroid Description</h1>
 			<div>
-				<p class="font-sans text-sm text-white/70">
+				<article class="font-sans text-sm text-white/70">
 					{#if activeportoItem}
-						{activeportoItem.description}
+						<p class={readmore ? '' : 'line-clamp-3'}>
+							{activeportoItem.description}
+						</p>
 					{/if}
-				</p>
+					<button
+						class="text-xs text-amber-400"
+						data-sveltekit-preload-data="tap"
+						onclick={handleReadMore}>{readmore ? 'Lebih Sedikit' : 'Lihat Selengkapnya'}</button
+					>
+				</article>
 			</div>
 			<h2>#Tools</h2>
 			<div class=" h-[90%] max-w-[60%] pb-4">
@@ -97,7 +108,7 @@
 										class="flex items-center justify-between bg-gradient-to-r from-white/0 via-white/30 to-white/0 px-4 py-1"
 									>
 										<h1>{tool.name}</h1>
-										<img src={tool.toolthumb} alt="" class="h-6" />
+										<img src={tool.toolthumb} alt="" class="h-7 bg-zinc-800/50" />
 									</figure>
 								{/each}
 							</div>
