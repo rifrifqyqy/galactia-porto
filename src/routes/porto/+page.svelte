@@ -1,11 +1,9 @@
 <script lang="ts">
-	import { typewriterEffect } from '$lib/components/animations/TypingAnimation';
 	import { onMount } from 'svelte';
-	import portodata from '../../data/porto.json';
+	export let data;
+	const portodata = data.data;
 	let activecategory = 'Website';
-
-	$: activePorto = portodata.filter((porto) => porto.label === activecategory);
-
+	$: activePorto = (portodata ?? []).filter((porto) => porto.label === activecategory);
 	$: activeportoItem = activePorto.length > 0 ? activePorto[0] : null;
 	function setCategory(category: string) {
 		activecategory = category;
