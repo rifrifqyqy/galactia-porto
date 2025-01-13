@@ -14,6 +14,11 @@
 	onMount(() => {});
 </script>
 
+<svelte:head>
+	<title>Rifqy | Porteroid Crates</title>
+	<meta name="description" content="Porteroid - Rifqy Hamdani" />
+</svelte:head>
+
 <main class="font-silkscreen grid h-screen grid-cols-2 gap-4 px-16 text-white">
 	<section class="my-auto flex flex-col items-center">
 		<figure class="flex w-[320px] flex-col gap-4 bg-white px-4 pb-6 pt-12 shadow-lg">
@@ -110,9 +115,9 @@
 
 <style>
 	.tab-porto {
-		@apply rounded-md px-4 py-2 text-xs text-white;
+		@apply rounded-md px-4 py-2 text-xs;
 	}
 	.tab-porto.active {
-		@apply bg-gradient-to-r from-white/0 via-white/30 to-white/0 backdrop-blur-sm;
+		@apply bg-gradient-to-r from-white/0 via-white/30 to-white/0 text-amber-400 backdrop-blur-sm;
 	}
 </style>

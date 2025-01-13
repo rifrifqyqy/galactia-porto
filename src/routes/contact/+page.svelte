@@ -9,6 +9,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Rifqy | Porteroid Contact Center</title>
+	<meta name="description" content="Porteroid - Rifqy Hamdani" />
+</svelte:head>
+
 <main
 	class="font-silkscreen flex h-screen flex-col items-center justify-center gap-4 text-center text-white"
 >

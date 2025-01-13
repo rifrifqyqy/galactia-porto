@@ -47,6 +47,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Rifqy | Porteroid Hallway</title>
+	<meta name="description" content="Porteroid - Rifqy Hamdani" />
+</svelte:head>
+
 <main class="relative grid h-full w-full grid-cols-2">
 	<figure class="absolute my-auto">
 		<img src="/images/polaroidcam.png" class="arloji h-36" alt="" />
