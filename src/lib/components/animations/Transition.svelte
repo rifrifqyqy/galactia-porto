@@ -50,9 +50,7 @@
 	});
 	// Fungsi untuk memperbarui border
 	function updateBorders() {
-		// @ts-ignore
 		elements.forEach((el, index) => {
-			// @ts-ignore
 			const scale = gsap.getProperty(el, 'scale');
 			const neighbors = getNeighbors(index, elements);
 
@@ -75,7 +73,7 @@
 		});
 	}
 	function getNeighbors(index: number, items: HTMLElement[]) {
-		const cols = 20; // Jumlah kolom
+		const cols = 20;
 		return {
 			left: index % cols !== 0 ? items[index - 1] : null,
 			right: (index + 1) % cols !== 0 ? items[index + 1] : null,
@@ -88,18 +86,14 @@
 		setTimeout(() => {
 			document.body.style.overflow = 'hidden';
 		}, 500);
-		// @ts-ignore
 		tl.play();
-		// @ts-ignore
 		tl.call(
 			() => {
-				// @ts-ignore
 				goto(targetUrl);
 			},
-			null,
+			[],
 			'endOfFrom'
 		);
-		// @ts-ignore
 		tl.restart();
 	}
 </script>
