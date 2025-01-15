@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"name": "Email",
+		"image": "https://cdn.icon-icons.com/icons2/2642/PNG/512/google_mail_gmail_logo_icon_159346.png",
+		"desc": " rifqyh22@gmail.com",
+		"link": "mailto:rifqyh22@gmail.com"
+	},
+	{
+		"id": 2,
+		"name": "Github",
+		"image": "https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png",
+		"desc": " rifrifqyqy",
+		"link": "https://github.com/rifrifqyqy"
+	},
+	{
+		"id": 3,
+		"name": "Instagram",
+		"image": "https://cdn.pixabay.com/photo/2020/11/15/06/18/instagram-logo-5744708_640.png",
+		"desc": " rifrifqyqy",
+		"link": "https://www.instagram.com/rifrifqyqy/"
+	},
+	{
+		"id": 4,
+		"name": "Linkedin",
+		"image": "https://vocasia.id/blog/wp-content/uploads/2021/09/Linkedin-Logo.png",
+		"desc": " rifrifqyqy",
+		"link": "https://www.linkedin.com/in/rifrifqyqy/"
+	}
+]
