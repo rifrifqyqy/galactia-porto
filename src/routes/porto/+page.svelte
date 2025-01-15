@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	export let data;
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 	const portodata = data.data;
 	let activecategory = 'Website';
 	$: activePorto = (portodata ?? []).filter((porto) => porto.label === activecategory);
@@ -92,7 +93,7 @@
 					<button
 						class="text-xs text-amber-400"
 						data-sveltekit-preload-data="tap"
-						onclick={handleReadMore}>{readmore ? 'Lebih Sedikit' : 'Lihat Selengkapnya'}</button
+						onclick={handleReadMore}>{readmore ? 'Lebih Sedikit' : 'Selengkapnya'}</button
 					>
 				</article>
 			</div>
