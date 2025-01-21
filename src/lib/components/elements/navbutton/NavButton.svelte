@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	export let destination: string;
+	let { destination }: { destination: string } = $props();
 </script>
 
 <section
