@@ -1,15 +1,6 @@
 <script lang="ts">
-	import { typewriterEffect } from '$lib/components/animations/TypingAnimation';
-	import { onMount } from 'svelte';
-	import type { PageData } from './$types';
-	export let data: PageData;
+	let { data } = $props();
 	let contact = data.data;
-	let container: HTMLElement;
-	let text = HTMLElement;
-	onMount(() => {
-
-		typewriterEffect(text, container, 0.06);
-	});
 </script>
 
 <svelte:head>

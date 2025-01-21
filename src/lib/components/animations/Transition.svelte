@@ -2,8 +2,7 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { goto } from '$app/navigation';
-	export let href;
-	export let id;
+	let { href, id } = $props();
 	let griditem = 160;
 	let elements: HTMLElement[] = [];
 	let tl: gsap.core.Timeline;
