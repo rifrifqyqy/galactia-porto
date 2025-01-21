@@ -1,12 +1,10 @@
 import type { PageServerLoad } from './$types';
 import { SV_DEV, SV_PROD } from '$env/static/private';
 export const load: PageServerLoad = async () => {
-	const mode = 'dev';
-	const api = mode === 'dev' ? SV_DEV : SV_PROD;
+	const api = SV_PROD;
 
 	try {
 		const response = await fetch(api);
-
 		if (!response.ok) {
 			return {
 				status: response.status,
