@@ -29,7 +29,7 @@ body {
 	overflow: hidden;
 }
 .poly-style {
-	@apply w-[70px] backdrop-blur-sm transition-all;
+	@apply w-12 md:w-[70px] backdrop-blur-sm transition-all;
 }
 .poly-clip[aria-current='page'] {
 	@apply bg-amber-500/80;
