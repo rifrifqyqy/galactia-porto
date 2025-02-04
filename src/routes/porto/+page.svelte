@@ -14,14 +14,12 @@
 			activePortoItem.set(initialPorto[0]);
 		}
 	});
-	
 
 	let activePorto = $state(
 		portodata.filter((porto: Portfolio) => porto.label === get(activeCategory))
 	);
 	let readmore = $state(false);
 	let imageloaded = $state(false);
-
 
 	function setCategory(category: string) {
 		imageloaded = false;
@@ -32,16 +30,13 @@
 		}
 	}
 
-
 	function setActivePorto(porto: Portfolio) {
 		activePortoItem.set(porto);
 	}
 
-
-	function handleReadMore() {
+	const handleReadMore = () => {
 		readmore = !readmore;
-	}
-
+	};
 
 	const handleimageload = () => {
 		setTimeout(() => {
@@ -71,21 +66,24 @@
 	<section class="grid h-screen grid-rows-2 py-4">
 		<header class="flex flex-col space-y-4 overflow-hidden">
 			<h1 class="text-2xl">Porteroids Crate</h1>
-			<ul class="flex gap-4">
+			<ul class="z-50 flex gap-4">
 				<button
 					class="tab-porto {$activeCategory === 'Website' ? 'active' : ''}"
+					disabled={$activeCategory === 'Website'}
 					onclick={() => setCategory('Website')}
 				>
 					Code
 				</button>
 				<button
 					class="tab-porto {$activeCategory === 'Figma' ? 'active' : ''}"
+					disabled={$activeCategory === 'Figma'}
 					onclick={() => setCategory('Figma')}
 				>
 					UIUX
 				</button>
 				<button
 					class="tab-porto {$activeCategory === 'Design' ? 'active' : ''}"
+					disabled={$activeCategory === 'Design'}
 					onclick={() => setCategory('Design')}
 				>
 					Design
@@ -113,15 +111,15 @@
 			</div>
 		</header>
 
-		<article class="space-y-3">
+		<article class="z-30 space-y-3">
 			<h1>#Porteroid Description</h1>
-			<div>
+			<div class="font-inter">
 				{#if $activePortoItem}
 					<p class={readmore ? '' : 'line-clamp-3'}>
 						{$activePortoItem.description}
 					</p>
 				{/if}
-				<button class="text-xs text-amber-400" onclick={handleReadMore}>
+				<button class="cursor-pointer text-xs text-amber-400" onclick={handleReadMore}>
 					{readmore ? 'Lebih Sedikit' : 'Selengkapnya'}
 				</button>
 			</div>
