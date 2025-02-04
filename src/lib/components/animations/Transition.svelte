@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { goto } from '$app/navigation';
 	let { href, id } = $props();
-	let griditem = 160;
+	import { griditem } from '../../../stores/viewportDetect.svelte';
+
 	let elements: HTMLElement[] = [];
 	let tl: gsap.core.Timeline;
 	onMount(() => {
@@ -46,6 +47,7 @@
 				gsap.set(`#grid-container${id}`, { display: 'none', opacity: 0 });
 			}
 		});
+		// Bersihkan event listener saat komponen di-unmount
 	});
 	// Fungsi untuk memperbarui border
 	function updateBorders() {
@@ -98,11 +100,10 @@
 </script>
 
 <main
-	class="absolute inset-0 left-0 top-0 z-50 -ml-8 -mt-[180%] grid h-[calc(100vh+50%)] w-screen"
-	style="grid-template-columns: repeat(20, 1fr);"
+	class="grid-res absolute inset-0 left-0 top-0 z-50 -ml-24 -mt-[200%] grid h-[calc(100vh+50%)] w-[calc(100vw+50%)] md:-ml-8 md:-mt-[180%]"
 	id="grid-container{id}"
 >
-	{#each Array(griditem) as _, i}
+	{#each Array($griditem) as _, i}
 		<div class="flex items-center justify-center bg-gray-950" id="grid-item{id}"></div>
 	{/each}
 </main>
@@ -111,7 +112,7 @@
 	{href}
 	aria-label="btn"
 	data-sveltekit-preload-data="tap"
-	data-sveltekit-preload-code="true"
+	data-sveltekit-preload-code="tap"
 	on:click={(e) => handleClick(e, href)}
 	class="text-dark-100 hover:text-primary-100 rounded-full px-4 py-2 transition-all"><slot /></a
 >
@@ -119,5 +120,17 @@
 <style>
 	.absolute {
 		position: absolute !important;
+	}
+
+	@media (max-width: 567px) {
+		.grid-res {
+			grid-template-columns: repeat(10, 1fr);
+		}
+	}
+
+	@media (min-width: 567px) {
+		.grid-res {
+			grid-template-columns: repeat(20, 1fr);
+		}
 	}
 </style>
