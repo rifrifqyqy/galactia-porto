@@ -1,29 +1,48 @@
 <script lang="ts">
+	import { activeCategory, activePortoItem } from '../../stores/portoStore.svelte';
+	import { onMount } from 'svelte';
+	import { get } from 'svelte/store';
 	import type { Portfolio } from '../../types/Portotype.svelte';
 	import type { PageData } from './$types';
 	let { data }: PageData = $props();
 	const portodata = data.data;
 
-	let filterdata = portodata.filter((porto: Portfolio) => porto.label === 'Website');
-	let activecategory = $state('Website');
-	let activePorto = $state(filterdata);
-	let activeportoItem = $state(activePorto[0]);
+	onMount(() => {
+		const initialCategory = get(activeCategory);
+		const initialPorto = portodata.filter((porto: Portfolio) => porto.label === initialCategory);
+		if (initialPorto.length > 0) {
+			activePortoItem.set(initialPorto[0]);
+		}
+	});
+	
+
+	let activePorto = $state(
+		portodata.filter((porto: Portfolio) => porto.label === get(activeCategory))
+	);
 	let readmore = $state(false);
+	let imageloaded = $state(false);
+
 
 	function setCategory(category: string) {
 		imageloaded = false;
-		activecategory = category;
+		activeCategory.set(category);
 		activePorto = portodata.filter((porto: Portfolio) => porto.label === category);
-		setActivePorto(activePorto[0]);
+		if (activePorto.length > 0) {
+			activePortoItem.set(activePorto[0]);
+		}
 	}
-	function setActivePorto(porto: any) {
-		activeportoItem = porto;
+
+
+	function setActivePorto(porto: Portfolio) {
+		activePortoItem.set(porto);
 	}
+
+
 	function handleReadMore() {
 		readmore = !readmore;
 	}
-	let imageloaded = $state(false);
-	// handle image load
+
+
 	const handleimageload = () => {
 		setTimeout(() => {
 			imageloaded = true;
@@ -35,7 +54,7 @@
 	<section class="my-auto flex flex-col items-center">
 		<figure class="flex w-[320px] flex-col gap-4 bg-white px-4 pb-6 pt-12 shadow-lg">
 			<img
-				src={imageloaded ? activeportoItem?.imageUrl : '/images/placeholder.png'}
+				src={imageloaded ? $activePortoItem?.imageUrl : '/images/placeholder.png'}
 				alt="Portfolio"
 				onload={handleimageload}
 				class="aspect-square {imageloaded
@@ -44,7 +63,7 @@
 			/>
 
 			<div class="font-caveat text-center text-2xl text-zinc-800">
-				<p>{imageloaded ? activeportoItem?.title : 'Loading...'}</p>
+				<p>{imageloaded ? $activePortoItem?.title : 'Loading...'}</p>
 			</div>
 		</figure>
 	</section>
@@ -54,19 +73,19 @@
 			<h1 class="text-2xl">Porteroids Crate</h1>
 			<ul class="flex gap-4">
 				<button
-					class="tab-porto {activecategory === 'Website' ? 'active' : ''}"
+					class="tab-porto {$activeCategory === 'Website' ? 'active' : ''}"
 					onclick={() => setCategory('Website')}
 				>
 					Code
 				</button>
 				<button
-					class="tab-porto {activecategory === 'Figma' ? 'active' : ''}"
+					class="tab-porto {$activeCategory === 'Figma' ? 'active' : ''}"
 					onclick={() => setCategory('Figma')}
 				>
 					UIUX
 				</button>
 				<button
-					class="tab-porto {activecategory === 'Design' ? 'active' : ''}"
+					class="tab-porto {$activeCategory === 'Design' ? 'active' : ''}"
 					onclick={() => setCategory('Design')}
 				>
 					Design
@@ -76,7 +95,7 @@
 			<div class="custom-scrollbar flex h-[180px] w-full flex-wrap gap-4 overflow-y-scroll p-1">
 				{#each activePorto as porto}
 					<button
-						class="h-fit w-fit bg-white px-1 pb-5 pt-3 {activeportoItem?.id === porto.id
+						class="h-fit w-fit bg-white px-1 pb-5 pt-3 {$activePortoItem?.id === porto.id
 							? 'ring-2 ring-amber-400'
 							: ''}"
 						onclick={() => setActivePorto(porto)}
@@ -84,7 +103,7 @@
 						<figure class="relative">
 							<img src={porto.imageUrl} alt="" class="aspect-square w-24 object-cover" />
 							<div
-								class="absolute left-0 top-0 h-full w-full {activeportoItem?.id === porto.id
+								class="absolute left-0 top-0 h-full w-full {$activePortoItem?.id === porto.id
 									? ''
 									: 'bg-zinc-800/30'}"
 							></div>
@@ -97,9 +116,9 @@
 		<article class="space-y-3">
 			<h1>#Porteroid Description</h1>
 			<div>
-				{#if activeportoItem}
+				{#if $activePortoItem}
 					<p class={readmore ? '' : 'line-clamp-3'}>
-						{activeportoItem.description}
+						{$activePortoItem.description}
 					</p>
 				{/if}
 				<button class="text-xs text-amber-400" onclick={handleReadMore}>
@@ -110,8 +129,8 @@
 			<h2>#Tools</h2>
 			<div class="h-[90%] max-w-[60%] pb-4">
 				<ul class="custom-scrollbar h-[50%] space-y-2 overflow-y-scroll text-xs">
-					{#if activeportoItem?.tools?.length > 0}
-						{#each activeportoItem.tools as tool}
+					{#if $activePortoItem && $activePortoItem.tools?.length > 0}
+						{#each $activePortoItem.tools as tool}
 							<figure
 								class="flex items-center justify-between bg-gradient-to-r from-white/0 via-white/30 to-white/0 px-4 py-1"
 							>

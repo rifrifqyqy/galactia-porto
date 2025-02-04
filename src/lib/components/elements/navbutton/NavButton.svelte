@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	let { destination }: { destination: string } = $props();
+	let { destination, children }: { destination: string; children: any } = $props();
 </script>
 
 <section
@@ -22,7 +22,7 @@
 		/>
 	</svg>
 	<!-- image -->
-	<slot />
+	{@render children()}
 </section>
 
 <style>

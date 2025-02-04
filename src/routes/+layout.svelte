@@ -6,7 +6,7 @@
 
 <div class=" relative mx-auto h-screen 2xl:container">
 	<main class="__container-bg flex h-screen">
-		<header class="absolute ml-8 flex h-full w-fit">
+		<header class="absolute flex h-full w-full md:ml-8">
 			<Navbar />
 		</header>
 

@@ -52,15 +52,15 @@
 	<meta name="description" content="Porteroid - Rifqy Hamdani" />
 </svelte:head>
 
-<main class="relative grid h-full w-full grid-cols-2">
+<main class="relative grid h-full w-full max-md:grid-rows-2 md:grid-cols-2">
 	<figure class="absolute my-auto">
-		<img src="/images/polaroidcam.png" class="arloji h-36" alt="" />
+		<img src="/images/polaroidcam.png" class="arloji h-20 md:h-36" alt="" />
 	</figure>
 	<figure class="absolute right-[10%] top-[40%]">
-		<img src="/images/kitkat.avif" class="kitkat h-32" alt="" />
+		<img src="/images/kitkat.avif" class="kitkat h-16 md:h-32" alt="" />
 	</figure>
 	<figure class="absolute bottom-[10%] left-[50%]">
-		<img src="/images/samsung.png" class="android h-48" alt="" />
+		<img src="/images/samsung.png" class="android h-32 md:h-48" alt="" />
 	</figure>
 	<section class="absolute flex h-screen w-full">
 		<figure class=" polaroid mx-auto my-auto h-fit w-fit" id="polaroid">
@@ -73,7 +73,7 @@
 				portrait="https://i.pinimg.com/736x/d6/b3/76/d6b376024a80ee00797105045cfe3f59.jpg"
 			/>
 		</figure>
-		<figure class=" polaroid3 mx-auto my-auto h-fit w-fit" id="polaroid">
+		<figure class="polaroid3 mx-auto my-auto h-fit w-fit" id="polaroid">
 			<BigPolaroid
 				portrait="https://i.pinimg.com/736x/b0/e5/d1/b0e5d1bbb5037ec1f650176179f7d8fe.jpg"
 			/>
@@ -81,12 +81,12 @@
 	</section>
 	<section class="font-silkscreen uppercase">
 		<div class="inline-block rounded-md p-4 text-white">
-			<span bind:this={container} class="typewriter-text"></span>
+			<span bind:this={container} class="typewriter-text max-md:text-xs"></span>
 			<span class="cursor animate-blink">|</span>
 		</div>
 	</section>
 	<section class="flex">
-		<h1 class="font-silkscreen ml-auto mt-auto w-fit">
+		<h1 class="font-silkscreen ml-auto w-fit max-md:mx-auto max-md:mt-44 md:mt-auto">
 			<div class="flex gap-2 rounded-md p-4 text-right text-amber-400">
 				<span bind:this={container2} class="typewriter-text"></span>
 				<div class=" h-6 w-2 animate-blink">.</div>
