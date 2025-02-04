@@ -8,7 +8,7 @@
 </script>
 
 <nav
-	class="z-50 mt-auto max-md:mx-auto md:my-auto flex h-fit w-fit rounded-full border-2 border-white bg-white/20 px-1 py-1 backdrop-blur-sm md:flex-col md:gap-4 md:py-8"
+	class="z-50 mt-auto max-md:mb-12 max-md:mx-auto md:my-auto flex h-fit w-fit rounded-full border-2 border-white bg-white/20 px-1 py-1 backdrop-blur-sm md:flex-col md:gap-4 md:py-8"
 >
 	<Transition href="/" id="home">
 		<NavButton destination="/">
